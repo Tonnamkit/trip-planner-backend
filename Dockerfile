@@ -1,7 +1,7 @@
 # Use official Node.js LTS image as base
 FROM node:20-alpine
 
-RUN apk update
+RUN apk update && apk upgrade --no-cache
 
 # Set working directory
 WORKDIR /app
